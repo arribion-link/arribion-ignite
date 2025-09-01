@@ -1,12 +1,15 @@
-
+import { Link } from "react-router-dom"
+import Logo from '../assets/Images/logo.jpg'
 const Header = () => {
     const logoName ={
-        color: "dodgerblue"
+        color: "dodgerblue",
+        fontSize: '1.2em',
+        fontWeight: 700
     }
   return (
      <header>
         <div className="logo-container">
-            <img src="" 
+            <img src={Logo} 
             alt="arribion ignite logo " 
             className='logo'
             />
@@ -16,9 +19,9 @@ const Header = () => {
         </div>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Courses</a></li>
-                <li><a href="/">Blog</a></li>
+                <li><Link to={'/'}>Home</Link></li>
+                <li><Link to={'/courses'}>Courses</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
             </ul>
         </nav>
     </header>
