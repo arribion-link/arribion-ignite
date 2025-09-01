@@ -1,11 +1,11 @@
 
 const Courses = () => {
   return (
-    <div>
+    <section>
       <>
-        <h1></h1>
+        <h1>Hello world</h1>
       </>
-    </div>
+    </section>
   )
 }
 

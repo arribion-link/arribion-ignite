@@ -7,7 +7,8 @@ const Header = () => {
         fontWeight: 700
     }
   return (
-     <header>
+      <header>
+        <Link to={'/'}>
         <div className="logo-container">
             <img src={Logo} 
             alt="arribion ignite logo " 
@@ -17,11 +18,27 @@ const Header = () => {
                 <h3 style={logoName}>Arribion Ignite</h3>
             </div>
         </div>
+        </Link>
         <nav>
             <ul>
-                <li><Link to={'/'}>Home</Link></li>
-                <li><Link to={'/courses'}>Courses</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
+                <li>
+                    <Link
+                        to={'/'}
+                          className="nav-link"
+                          id="active-link"
+                    >
+                        Home
+                    </Link>
+                </li>
+                  <li>
+                      <Link
+                          to={'/courses'}
+                          className="nav-link"
+                      >
+                          Courses
+                      </Link>
+                  </li>
+                <li><Link to="/blog" className="nav-link">Blog</Link></li>
             </ul>
         </nav>
     </header>
