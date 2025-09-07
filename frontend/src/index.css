@@ -13,8 +13,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  --text-color: rgba(255, 255, 255, 0.87);
-  background-color: #252735;
+  --text-color: rgba(40, 40, 40, 0.87);
+  background-color: rgb(255, 255, 255);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -178,6 +178,65 @@ header nav ul li{
   height: auto;
   height: 10em;
   background-color: #222228;
+}
+/* MAIN COURSES PAGE */
+.courses-main-page{
+  background-color: gainsboro;
+}
+.courses-main-container{
+  display: flex;
+  gap: 1em;
+}
+
+.courses-main-container{
+  padding: 1em;
+}
+
+.courses-main-container aside{
+  background-color: gray;
+  padding: 1em;
+  border-radius: 5px;
+  min-height: 60vh;
+}
+
+.courses-main-container aside h2{
+  margin-top: 2em;
+  color: dodgerblue;
+  font-size: 1.4em;
+}
+
+.courses-main-container .courses-container{
+    background-color: gray;
+  padding: 1em;
+  border-radius: 5px;
+  min-height: 60vh;
+  width: 100%;
+}
+
+/* BLOG SECTION */
+.blog-page-header{
+  min-height: 40vh;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4em;
+}
+
+.blog-page-header h1{
+  font-size: 2em;
+}
+
+.blog-page-header p{
+  font-size: 1.2em;
+}
+
+.blogs-container{
+  min-height: 50vh;
 }
 
 footer{
